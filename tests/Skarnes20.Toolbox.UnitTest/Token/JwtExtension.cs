@@ -1,15 +1,11 @@
 using Skarnes20.Toolbox.Token;
+using Xunit;
 
 namespace Skarnes20.Toolbox.UnitTest.Token
 {
     public class JwtExtension
     {
-        private string _token;
-
-        public JwtExtension()
-        {
-            _token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
-        }
+        private readonly string _token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
 
         [Fact(DisplayName = "GetValue with valid property returns correct value")]
         public void GetValue_ValidProperty_Value()
