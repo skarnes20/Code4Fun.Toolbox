@@ -1,4 +1,4 @@
-﻿namespace Skarnes20.Toolbox.Token;
+﻿namespace Code4Fun.Toolbox.Token;
 
 public static class JwtExtension
 {
